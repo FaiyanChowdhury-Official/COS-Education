@@ -1,0 +1,441 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==========================================================================
+   COS EDUCATION — WHITE-BASED SYSTEM FOR CRM, COUNSELLOR DESK & STUDENT PORTAL
+   ========================================================================== */
+
+.student-portal-white-theme {
+  --background: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-secondary: #F8FAFC;
+  --surface-muted: #F1F5F9;
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-disabled: #94A3B8;
+
+  --border: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+  --primary-light: #EFF6FF;
+
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+.portal-white-theme {
+  --background: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-secondary: #F8FAFC;
+  --surface-muted: #F1F5F9;
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-disabled: #94A3B8;
+
+  --border: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+  --primary-light: #EFF6FF;
+
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+/* 1. Surfaces & Backgrounds (Student Portal & White Theme) */
+.student-portal-white-theme .bg-slate-950,
+.student-portal-white-theme .bg-slate-900,
+.student-portal-white-theme .bg-slate-850,
+.student-portal-white-theme .bg-slate-800,
+.student-portal-white-theme .bg-slate-900\/90,
+.student-portal-white-theme .bg-slate-900\/80,
+.student-portal-white-theme .bg-slate-900\/60,
+.student-portal-white-theme .bg-slate-900\/50,
+.student-portal-white-theme .bg-slate-900\/40,
+.portal-white-theme .bg-slate-950,
+.portal-white-theme .bg-slate-900 {
+  background-color: #FFFFFF !important;
+}
+
+.student-portal-white-theme .bg-slate-950\/80,
+.student-portal-white-theme .bg-slate-950\/90,
+.portal-white-theme .bg-slate-950\/80,
+.portal-white-theme .bg-slate-950\/90,
+.portal-white-theme .bg-slate-900\/90,
+.portal-white-theme .bg-slate-900\/80 {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+.portal-white-theme .bg-slate-900\/50,
+.portal-white-theme .bg-slate-900\/40,
+.portal-white-theme .bg-slate-800 {
+  background-color: #FFFFFF !important;
+}
+
+.student-portal-white-theme .bg-slate-800\/80,
+.student-portal-white-theme .bg-slate-800\/70,
+.student-portal-white-theme .bg-slate-800\/60,
+.student-portal-white-theme .bg-slate-800\/50,
+.portal-white-theme .bg-slate-800\/80,
+.portal-white-theme .bg-slate-800\/70,
+.portal-white-theme .bg-slate-800\/60,
+.portal-white-theme .bg-slate-800\/50 {
+  background-color: #F8FAFC !important;
+}
+
+.student-portal-white-theme .bg-slate-800\/40,
+.student-portal-white-theme .bg-slate-800\/30,
+.student-portal-white-theme .bg-slate-800\/20,
+.student-portal-white-theme .bg-slate-800\/10,
+.portal-white-theme .bg-slate-800\/40,
+.portal-white-theme .bg-slate-800\/30,
+.portal-white-theme .bg-slate-800\/20,
+.portal-white-theme .bg-slate-800\/10 {
+  background-color: #F1F5F9 !important;
+}
+
+/* Clear heavy dark gradients on cards */
+.student-portal-white-theme [class*="from-blue-900"],
+.student-portal-white-theme [class*="via-indigo-900"],
+.student-portal-white-theme [class*="from-slate-900"],
+.student-portal-white-theme [class*="from-slate-950"],
+.student-portal-white-theme [class*="from-emerald-950"],
+.student-portal-white-theme [class*="from-blue-950"],
+.portal-white-theme [class*="from-slate-900"],
+.portal-white-theme [class*="from-slate-950"],
+.portal-white-theme [class*="from-emerald-950"],
+.portal-white-theme [class*="from-blue-950"] {
+  background-image: none !important;
+  background-color: #FFFFFF !important;
+}
+
+/* 2. Borders & Dividers */
+.student-portal-white-theme .border-slate-800,
+.student-portal-white-theme .border-slate-700,
+.student-portal-white-theme .border-slate-800\/80,
+.student-portal-white-theme .border-slate-800\/60,
+.student-portal-white-theme .border-slate-700\/60,
+.student-portal-white-theme .border-slate-700\/50,
+.student-portal-white-theme .border-slate-800\/30,
+.portal-white-theme .border-slate-800,
+.portal-white-theme .border-slate-700,
+.portal-white-theme .border-slate-800\/80,
+.portal-white-theme .border-slate-800\/60,
+.portal-white-theme .border-slate-700\/60,
+.portal-white-theme .border-slate-700\/50,
+.portal-white-theme .border-slate-800\/30 {
+  border-color: #E2E8F0 !important;
+}
+
+.student-portal-white-theme .divide-slate-800 > :not([hidden]) ~ :not([hidden]),
+.student-portal-white-theme .divide-slate-700 > :not([hidden]) ~ :not([hidden]),
+.portal-white-theme .divide-slate-800 > :not([hidden]) ~ :not([hidden]),
+.portal-white-theme .divide-slate-700 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #E2E8F0 !important;
+}
+
+/* 3. Text Colors */
+.student-portal-white-theme .text-slate-100,
+.student-portal-white-theme .text-slate-200,
+.portal-white-theme .text-slate-100,
+.portal-white-theme .text-slate-200 {
+  color: #0F172A !important;
+}
+
+.student-portal-white-theme .text-slate-300,
+.portal-white-theme .text-slate-300 {
+  color: #334155 !important;
+}
+
+.student-portal-white-theme .text-slate-400,
+.portal-white-theme .text-slate-400 {
+  color: #475569 !important;
+}
+
+.student-portal-white-theme .text-slate-500,
+.portal-white-theme .text-slate-500 {
+  color: #64748B !important;
+}
+
+.student-portal-white-theme h1,
+.student-portal-white-theme h2,
+.student-portal-white-theme h3,
+.student-portal-white-theme h4,
+.student-portal-white-theme h5,
+.student-portal-white-theme h6,
+.portal-white-theme h1,
+.portal-white-theme h2,
+.portal-white-theme h3,
+.portal-white-theme h4,
+.portal-white-theme h5,
+.portal-white-theme h6 {
+  color: #0F172A !important;
+}
+
+/* Base text-white becomes slate-900 unless on a colored background */
+.student-portal-white-theme .text-white,
+.portal-white-theme .text-white {
+  color: #0F172A !important;
+}
+
+.student-portal-white-theme .ring-slate-950,
+.portal-white-theme .ring-slate-950 {
+  --tw-ring-color: #FFFFFF !important;
+}
+
+/* Preserve crisp white text on colored solid action buttons & primary elements */
+.student-portal-white-theme .bg-blue-600,
+.student-portal-white-theme .bg-blue-600 *,
+.student-portal-white-theme .bg-blue-700,
+.student-portal-white-theme .bg-blue-700 *,
+.student-portal-white-theme .bg-emerald-600,
+.student-portal-white-theme .bg-emerald-600 *,
+.student-portal-white-theme .bg-emerald-500,
+.student-portal-white-theme .bg-emerald-500 *,
+.student-portal-white-theme .bg-rose-600,
+.student-portal-white-theme .bg-rose-600 *,
+.student-portal-white-theme .bg-rose-500,
+.student-portal-white-theme .bg-rose-500 *,
+.student-portal-white-theme .bg-red-600,
+.student-portal-white-theme .bg-red-600 *,
+.student-portal-white-theme .bg-red-500,
+.student-portal-white-theme .bg-red-500 *,
+.student-portal-white-theme .bg-amber-600,
+.student-portal-white-theme .bg-amber-600 *,
+.student-portal-white-theme .bg-indigo-600,
+.student-portal-white-theme .bg-indigo-600 *,
+.student-portal-white-theme .bg-purple-600,
+.student-portal-white-theme .bg-purple-600 *,
+.portal-white-theme .bg-blue-600,
+.portal-white-theme .bg-blue-600 *,
+.portal-white-theme .bg-blue-700,
+.portal-white-theme .bg-blue-700 *,
+.portal-white-theme .bg-emerald-600,
+.portal-white-theme .bg-emerald-600 *,
+.portal-white-theme .bg-emerald-500,
+.portal-white-theme .bg-emerald-500 *,
+.portal-white-theme .bg-rose-600,
+.portal-white-theme .bg-rose-600 *,
+.portal-white-theme .bg-rose-500,
+.portal-white-theme .bg-rose-500 *,
+.portal-white-theme .bg-red-600,
+.portal-white-theme .bg-red-600 *,
+.portal-white-theme .bg-red-500,
+.portal-white-theme .bg-red-500 *,
+.portal-white-theme .bg-amber-600,
+.portal-white-theme .bg-amber-600 *,
+.portal-white-theme .bg-indigo-600,
+.portal-white-theme .bg-indigo-600 *,
+.portal-white-theme .bg-purple-600,
+.portal-white-theme .bg-purple-600 * {
+  color: #FFFFFF !important;
+}
+
+/* 4. Inputs, Selects, and Textareas */
+.student-portal-white-theme input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+.student-portal-white-theme select,
+.student-portal-white-theme textarea,
+.portal-white-theme input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+.portal-white-theme select,
+.portal-white-theme textarea {
+  background-color: #FFFFFF !important;
+  border: 1px solid #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+.student-portal-white-theme input::placeholder,
+.student-portal-white-theme textarea::placeholder,
+.portal-white-theme input::placeholder,
+.portal-white-theme textarea::placeholder {
+  color: #94A3B8 !important;
+}
+
+.student-portal-white-theme input:focus,
+.student-portal-white-theme select:focus,
+.student-portal-white-theme textarea:focus,
+.portal-white-theme input:focus,
+.portal-white-theme select:focus,
+.portal-white-theme textarea:focus {
+  border-color: #2563EB !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+  outline: none !important;
+}
+
+.student-portal-white-theme label,
+.portal-white-theme label {
+  color: #334155 !important;
+}
+
+/* 5. Tables */
+.student-portal-white-theme table,
+.portal-white-theme table {
+  background-color: #FFFFFF !important;
+}
+
+.student-portal-white-theme table thead,
+.student-portal-white-theme table thead tr,
+.student-portal-white-theme table th,
+.portal-white-theme table thead,
+.portal-white-theme table thead tr,
+.portal-white-theme table th {
+  background-color: #F8FAFC !important;
+  color: #334155 !important;
+  border-color: #E2E8F0 !important;
+}
+
+.student-portal-white-theme table tbody tr,
+.portal-white-theme table tbody tr {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+}
+
+.student-portal-white-theme table tbody tr:hover,
+.portal-white-theme table tbody tr:hover {
+  background-color: #F8FAFC !important;
+}
+
+.student-portal-white-theme table td,
+.portal-white-theme table td {
+  color: #0F172A !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* 6. Modals & Dropdowns */
+.student-portal-white-theme .shadow-2xl,
+.student-portal-white-theme .shadow-xl,
+.portal-white-theme .shadow-2xl,
+.portal-white-theme .shadow-xl {
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04) !important;
+}
+
+.student-portal-white-theme .fixed.inset-0.bg-black\/60,
+.student-portal-white-theme .fixed.inset-0.bg-black\/50,
+.student-portal-white-theme .fixed.inset-0.bg-slate-950\/70,
+.student-portal-white-theme .fixed.inset-0.bg-slate-950\/80,
+.student-portal-white-theme .fixed.inset-0.bg-slate-900\/50,
+.portal-white-theme .fixed.inset-0.bg-black\/60,
+.portal-white-theme .fixed.inset-0.bg-black\/50,
+.portal-white-theme .fixed.inset-0.bg-slate-950\/70,
+.portal-white-theme .fixed.inset-0.bg-slate-950\/80 {
+  background-color: rgba(15, 23, 42, 0.45) !important;
+}
+
+/* 7. Hover effects */
+.student-portal-white-theme .hover\:bg-slate-900:hover,
+.student-portal-white-theme .hover\:bg-slate-800:hover,
+.student-portal-white-theme .hover\:bg-slate-800\/80:hover,
+.student-portal-white-theme .hover\:bg-slate-800\/60:hover,
+.student-portal-white-theme .hover\:bg-slate-800\/40:hover,
+.student-portal-white-theme .hover\:bg-slate-800\/30:hover,
+.portal-white-theme .hover\:bg-slate-900:hover,
+.portal-white-theme .hover\:bg-slate-800:hover,
+.portal-white-theme .hover\:bg-slate-800\/80:hover,
+.portal-white-theme .hover\:bg-slate-800\/60:hover,
+.portal-white-theme .hover\:bg-slate-800\/40:hover {
+  background-color: #F8FAFC !important;
+}
+
+.student-portal-white-theme .hover\:text-white:hover,
+.portal-white-theme .hover\:text-white:hover {
+  color: #0F172A !important;
+}
+
+/* 8. Subtle Scrollbars */
+.student-portal-white-theme *::-webkit-scrollbar,
+.portal-white-theme *::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.student-portal-white-theme *::-webkit-scrollbar-track,
+.portal-white-theme *::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+.student-portal-white-theme *::-webkit-scrollbar-thumb,
+.portal-white-theme *::-webkit-scrollbar-thumb {
+  background-color: #CBD5E1;
+  border-radius: 9999px;
+}
+
+.student-portal-white-theme *::-webkit-scrollbar-thumb:hover,
+.portal-white-theme *::-webkit-scrollbar-thumb:hover {
+  background-color: #94A3B8;
+}
+
+/* 9. Semantic Badges Restyling (Soft pastels) */
+.student-portal-white-theme .bg-emerald-500\/10,
+.student-portal-white-theme .bg-emerald-500\/15,
+.student-portal-white-theme .bg-emerald-500\/20,
+.portal-white-theme .bg-emerald-500\/10,
+.portal-white-theme .bg-emerald-500\/15,
+.portal-white-theme .bg-emerald-500\/20 {
+  background-color: #F0FDF4 !important;
+  color: #15803D !important;
+  border-color: #BBF7D0 !important;
+}
+
+.student-portal-white-theme .bg-blue-500\/10,
+.student-portal-white-theme .bg-blue-500\/15,
+.student-portal-white-theme .bg-blue-500\/20,
+.portal-white-theme .bg-blue-500\/10,
+.portal-white-theme .bg-blue-500\/15,
+.portal-white-theme .bg-blue-500\/20 {
+  background-color: #EFF6FF !important;
+  color: #1D4ED8 !important;
+  border-color: #BFDBFE !important;
+}
+
+.student-portal-white-theme .bg-amber-500\/10,
+.student-portal-white-theme .bg-amber-500\/15,
+.student-portal-white-theme .bg-amber-500\/20,
+.portal-white-theme .bg-amber-500\/10,
+.portal-white-theme .bg-amber-500\/15,
+.portal-white-theme .bg-amber-500\/20 {
+  background-color: #FFFBEB !important;
+  color: #B45309 !important;
+  border-color: #FDE68A !important;
+}
+
+.student-portal-white-theme .bg-rose-500\/10,
+.student-portal-white-theme .bg-rose-500\/15,
+.student-portal-white-theme .bg-rose-500\/20,
+.student-portal-white-theme .bg-red-500\/10,
+.student-portal-white-theme .bg-red-500\/20,
+.portal-white-theme .bg-rose-500\/10,
+.portal-white-theme .bg-rose-500\/15,
+.portal-white-theme .bg-rose-500\/20,
+.portal-white-theme .bg-red-500\/10,
+.portal-white-theme .bg-red-500\/20 {
+  background-color: #FEF2F2 !important;
+  color: #B91C1C !important;
+  border-color: #FECACA !important;
+}
+
+.student-portal-white-theme .bg-purple-500\/10,
+.student-portal-white-theme .bg-purple-500\/15,
+.student-portal-white-theme .bg-purple-500\/20,
+.portal-white-theme .bg-purple-500\/10,
+.portal-white-theme .bg-purple-500\/15,
+.portal-white-theme .bg-purple-500\/20 {
+  background-color: #FAF5FF !important;
+  color: #6B21A8 !important;
+  border-color: #E9D5FF !important;
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "COS Education",
+  "description": "COS Education is an international student recruitment and education partner, connecting students with universities and higher education institutions across the world.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
